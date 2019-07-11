@@ -14,6 +14,7 @@ public class Spring_mybatisTest {
     public void testMapper() {
 		testUserMapper=bean.getBean(TestUserMapper.class);
         TestUser user=TestUser.builder().name("asda").build();
+        //TestUser user1=TestUser.builder().id(1).build();
         testUserMapper.insertSelective(user);
 	}
 
